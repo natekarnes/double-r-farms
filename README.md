@@ -26,7 +26,8 @@ Leave the build command empty and set the publish directory to `.`. Then point t
 ## Each season, update
 
 - **Prices** in the `#prices` section of `index.html`, and in the `makesOffer` block of the JSON-LD at the top
-- **Hours/dates** in the FAQ (both the visible FAQ and the `FAQPage` JSON-LD)
+- **Hours/dates**: the hero line, the hours box in `#visit`, the FAQ (visible and `FAQPage` JSON-LD),
+  and `openingHoursSpecification` in the JSON-LD (bump `validFrom`/`validThrough` to the new year)
 - **Photos** in `images/`
 
 ## Getting more visitors
