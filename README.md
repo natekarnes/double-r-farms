@@ -9,7 +9,8 @@ It's plain HTML and CSS, with no build step and nothing to install, so it loads 
 | --- | --- |
 | `index.html` | The whole site: things to do, prices, story, FAQ, map |
 | `styles.css` | Colors, fonts and layout |
-| `images/` | Photos (drop new ones here) |
+| `images/` | Photos and the logos used on the site (drop new photos here) |
+| `brand/` | Logo files for print, signs and social media, plus colors and fonts |
 | `robots.txt`, `sitemap.xml` | Help search engines find the site |
 
 ## Preview locally

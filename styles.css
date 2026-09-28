@@ -65,16 +65,9 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
   backdrop-filter: saturate(1.4) blur(8px);
   border-bottom: 1px solid var(--line);
 }
-.header-inner { display: flex; align-items: center; gap: 24px; height: 68px; }
+.header-inner { display: flex; align-items: center; gap: 24px; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); margin-right: auto; }
-.monogram {
-  position: relative; display: grid; place-items: center;
-  width: 40px; height: 40px; border-radius: 50%;
-  background: var(--barn); color: var(--paper);
-  font: 800 1.2rem/1 var(--display);
-}
-.monogram span { position: absolute; color: var(--gold); transform: translate(5px, 4px); }
-.brand-name { font: 800 1.25rem/1 var(--display); }
+.brand img { height: 52px; width: auto; }
 .nav { display: flex; gap: 22px; }
 .nav a { color: var(--ink); text-decoration: none; font-weight: 500; }
 .nav a:hover { color: var(--pumpkin); }
@@ -91,7 +84,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); letter-spacing: -.01em; }
 .hero h1 em { font-style: italic; color: var(--pumpkin); font-weight: 600; }
 .lede { font-size: 1.2rem; color: var(--muted); max-width: 36ch; }
-.hero-art svg { width: 100%; height: auto; filter: drop-shadow(0 18px 30px rgba(58, 42, 28, .18)); }
+.hero-art img { width: min(100%, 440px); margin-inline: auto; filter: drop-shadow(0 18px 30px rgba(58, 42, 28, .2)); transform: rotate(-4deg); }
 
 .quick-facts {
   list-style: none; padding: 0; margin-top: 48px;
@@ -156,8 +149,8 @@ address { font-style: normal; font-size: 1.15rem; margin-bottom: 1rem; }
 /* Footer */
 .site-footer { background: var(--ink); color: rgba(255, 250, 240, .8); padding: 40px 0; text-align: center; }
 .site-footer a { color: var(--gold); }
-.footer-brand { font: 800 1.4rem var(--display); color: var(--paper); }
-.footer-brand span { display: block; font: italic 600 1rem var(--display); color: var(--gold); margin-top: 4px; }
+.footer-logo { height: 64px; width: auto; margin: 0 auto 8px; }
+.footer-tagline { font: italic 600 1.1rem var(--display); color: var(--gold); }
 .small { font-size: .85rem; opacity: .7; margin: 0; }
 
 .mobile-bar { display: none; }
@@ -166,14 +159,15 @@ address { font-style: normal; font-size: 1.15rem; margin-bottom: 1rem; }
 @media (max-width: 900px) {
   .nav { display: none; }
   .hero-inner, .prices, .story, .visit { grid-template-columns: 1fr; }
-  .hero-art { max-width: 420px; margin-inline: auto; }
+  .hero-art { max-width: 340px; margin-inline: auto; order: -1; }
   .cards { grid-template-columns: 1fr 1fr; }
   .quick-facts { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
+  .brand img { height: 44px; }
   .site-header .btn-small { display: none; }
   .cards { grid-template-columns: 1fr; }
-  .hero-art { max-width: 320px; }
+  .hero-art { max-width: 190px; }
   body { padding-bottom: 72px; }
   .mobile-bar {
     display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
