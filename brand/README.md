@@ -7,8 +7,7 @@ everywhere with no fonts to install.
 | File | Use it for |
 | --- | --- |
 | `logo-mark.svg` / `.png` | Icon on its own: favicon, stickers, social avatars |
-| `logo-badge.svg` / `.png` | Round badge: signs, T-shirts, bags, flyers |
-| `logo-profile-square.png` | Facebook / Instagram / Google Business profile picture (1024×1024) |
+| `logo-profile-square.png` | Facebook / Instagram / Google Business profile picture (1024×1024, pumpkin on cream) |
 | `logo-horizontal.svg` / `.png` | Logo with tagline: flyers, ads, letterhead |
 | `logo-horizontal-dark.svg` | Same, for dark backgrounds |
 | `logo-compact.svg` / `logo-compact-dark.svg` | Logo without tagline: website header/footer, small spaces |

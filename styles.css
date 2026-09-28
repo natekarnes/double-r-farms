@@ -84,7 +84,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline
 .hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); letter-spacing: -.01em; }
 .hero h1 em { font-style: italic; color: var(--pumpkin); font-weight: 600; }
 .lede { font-size: 1.2rem; color: var(--muted); max-width: 36ch; }
-.hero-art img { width: min(100%, 440px); margin-inline: auto; filter: drop-shadow(0 18px 30px rgba(58, 42, 28, .2)); transform: rotate(-4deg); }
+.hero-art img { width: min(100%, 420px); margin-inline: auto; filter: drop-shadow(0 18px 30px rgba(58, 42, 28, .2)); }
 
 .quick-facts {
   list-style: none; padding: 0; margin-top: 48px;
